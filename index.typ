@@ -1,3 +1,4 @@
+
 #import "lib/ilm.typ": *
 
 #set text(lang: "ru")
@@ -9,7 +10,7 @@
 
 
 #show: ilm.with(
-  title: [Название],
+  title: [Информационное право],
   author: 
     "Панков Василий <pank-su>",
   author-format: (author) => [
@@ -20,13 +21,13 @@
       )][#h(1em)][#text(author, size: 1.6em)]
   ],
   date: datetime.today(),
-  abstract: [Кто введёт? Насколько краткий конспект? на чём основан?],
+  abstract: [По лекциям Базатеевой],
   table-of-contents: outline(depth: 2),
   external-link-circle: false
 )
 
 #include "src/000_введение.typ"
-
+#include "src/001_inf_pravo.typ"
 
 /*
 ==============================================================================
